@@ -179,14 +179,14 @@ if __name__ == '__main__':
 	y_train = []
 	x_test = []
 	y_test = []
-	for i in range(150000):
+	for i in range(15000):
 		k = 1/1000 * rd.randint(1,999)
-		if i < (150000-500):
+		if i < (15000-500):
 			x_train.append( [k] )
 			y_train.append( [Tar_Func( k )] )
 			#print ( k , Tar_Func(k))
 		else:
-			k = (i-150000+500) * 1/500
+			k = (i-15000+500) * 1/500
 			x_test.append( [k] )
 			y_test.append( [Tar_Func( k )] )
 	x_train = torch.from_numpy( np.array(x_train) )
@@ -196,7 +196,7 @@ if __name__ == '__main__':
 	#print(x_train.shape)
 
 	batch = 100
-	epoch = 100
+	epoch = 1000
 
 	loader = data.DataLoader(
 		dataset = data.TensorDataset( x_train , y_train ),
@@ -208,8 +208,8 @@ if __name__ == '__main__':
 		batch_size = batch,
 		shuffle = True)
 
-	net = Net( )
-	#net = torch.load( 'modelsimple.pt' )
+	#net = Net( )
+	net = torch.load( 'modeliwant.pt' )
 	print(net)
 	#print( y_train )
 
@@ -217,7 +217,7 @@ if __name__ == '__main__':
 
 	#print( list(net.parameters()))
 
-	optimizer = optim.Adam( net.parameters()  , lr = 1e-4 )
+	optimizer = optim.Adam( net.parameters()  , lr = 1e-1 )
 
 	
 	for i in range( epoch  ):
