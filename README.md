@@ -7,7 +7,7 @@
 
 Need A thing Like Cover : (
 ---
--[Welcome](https://hackmd.io/@xLS9tyPsRCGAuHnIohfG-Q/HJPgSauNw)
+- [Welcome](https://hackmd.io/@xLS9tyPsRCGAuHnIohfG-Q/HJPgSauNw)
 
 This is Content of training course.
 Hoping it can help myself get clear of something ><
