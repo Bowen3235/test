@@ -1,5 +1,8 @@
 # CWL Semi training Content
 
+[![hackmd-github-sync-badge](https://hackmd.io/3137YRUOSd6583y6Y-kfXA/badge)](https://hackmd.io/3137YRUOSd6583y6Y-kfXA)
+
+
 ###### tags: `CWL Semi`,`Training`
 
 Need A thing Like Cover : (
